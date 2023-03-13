@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-header-component',
@@ -7,6 +8,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponentComponent implements OnInit {
   public scrolled = false;
+  public deviceInfo: any;
+  public clickShowMenu = false;
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     const numb = window.scrollY;
@@ -17,9 +21,14 @@ export class HeaderComponentComponent implements OnInit {
       this.scrolled = false;
     }
   }
-  constructor() { }
+  constructor(private deviceService: DeviceDetectorService) { }
 
   ngOnInit() {
+    this.deviceInfo = this.deviceService.getDeviceInfo();
+
+  }
+  toggleShowHideMenuMobile(){
+    this.clickShowMenu = !this.clickShowMenu;
   }
 
 }

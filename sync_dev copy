@@ -1,0 +1,4 @@
+rm -fr dist
+ng build --base-href=/ --configuration production --output-path=dist/ecommerce/
+
+rsync -av --progress --delete --rsh='ssh' dist/ecommerce/ root@34.101.129.73:/var/www/ecommerce/html/

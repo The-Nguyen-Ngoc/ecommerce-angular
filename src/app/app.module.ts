@@ -15,6 +15,8 @@ import { BannerComponentComponent } from './page/home/banner-component/banner-co
 import { TrendingComponentComponent } from './page/home/trending-component/trending-component.component';
 import { SellingComponentComponent } from './page/home/selling-component/selling-component.component';
 import { UuDaiComponentComponent } from './page/home/uu-dai-component/uu-dai-component.component';
+import { SocialComponentComponent } from './page/home/social-component/social-component.component';
+import { ImportComponentComponent } from './page/import-component/import-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { UuDaiComponentComponent } from './page/home/uu-dai-component/uu-dai-com
     BannerComponentComponent,
     TrendingComponentComponent,
     SellingComponentComponent,
-    UuDaiComponentComponent
+    UuDaiComponentComponent,
+    SocialComponentComponent,
+    ImportComponentComponent
   ],
   imports: [
     BrowserModule,
