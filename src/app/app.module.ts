@@ -7,16 +7,28 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './page/home/home.component';
 import { HeaderComponentComponent } from './page/header-component/header-component.component';
 import { IntroComponentComponent } from './page/home/intro-component/intro-component.component';
-import { FeatureComponentComponent } from './page/home/feature-component/feature-component.component';
 import { FooterComponentComponent } from './page/home/footer-component/footer-component.component';
+import { PageComponentComponent } from './page/page-component.component';
+import { ProductsComponent } from './page/products-component/products-component.component';
+import { ContactsComponent } from './page/contacts/contacts.component';
+import { BannerComponentComponent } from './page/home/banner-component/banner-component.component';
+import { TrendingComponentComponent } from './page/home/trending-component/trending-component.component';
+import { SellingComponentComponent } from './page/home/selling-component/selling-component.component';
+import { UuDaiComponentComponent } from './page/home/uu-dai-component/uu-dai-component.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponentComponent,
     IntroComponentComponent,
-    FeatureComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    PageComponentComponent,
+    ProductsComponent,
+    ContactsComponent,
+    BannerComponentComponent,
+    TrendingComponentComponent,
+    SellingComponentComponent,
+    UuDaiComponentComponent
   ],
   imports: [
     BrowserModule,
